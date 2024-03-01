@@ -9,12 +9,17 @@
     "plugins"
   ],
   "scripts": {
-    "test": "tsc test.ts --noEmit"
+    "test": "tsc test.ts --noEmit",
+    "prepare": "husky",
+    "commitlint": "commitlint --edit"
   },
   "repository": "https://github.com/AMap-Web/amap-jsapi-types",
   "author": "donglai.ydl",
   "license": "MIT",
   "devDependencies": {
+    "@commitlint/cli": "^19.0.3",
+    "@commitlint/config-conventional": "^19.0.3",
+    "husky": "^9.0.11",
     "typescript": "^3.7.3"
   }
 }
